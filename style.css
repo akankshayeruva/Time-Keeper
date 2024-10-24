@@ -1,4 +1,13 @@
-
+#backgroundLayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('DALL·E 2024-10-24 21.48.27 - A background image for a stylish, modern clock project. The background should feature a subtle, abstract pattern with smooth gradients of dark and lig.webp') no-repeat center center;
+    background-size: cover;
+    z-index: -1; 
+}
 #clockContainer{  
     position: relative;
     margin: 50px auto;
@@ -48,30 +57,30 @@
     background-color: red; 
 }
 
-    
-#digitalClock {
+    #digitalClock {
     text-align: center;
     margin-top: 20px;
     font-size: 3vw;
     font-family: Arial, sans-serif;
-    color: rgb(195, 117, 117);
-    background-color: blanchedalmond;
-
+    color: rgb(255, 255, 255); 
+    background: burlywood; 
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), inset 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-    
-
 
 #digitalClock:hover {
-    margin : 0 auto;
-    position :relative;
-    top: 20px;
-    width : fit-content;
-    background-color: blanchedalmond;
-    padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px burlywood;
-    transform: scale(1.05); 
+    background: rgba(213, 131, 23, 0.826); 
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4), inset 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1); 
 }
+
 
 @keyframes ticking {
     0% { transform: rotate(0deg); }
