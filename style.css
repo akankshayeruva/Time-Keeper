@@ -8,6 +8,7 @@
     background-size: cover;
     z-index: -1; 
 }
+
 #clockContainer{  
     position: relative;
     margin: 50px auto;
@@ -18,7 +19,7 @@
     border: 6px solid black; 
     background: url(clock.png) no-repeat center center;
     background-size: 90%;
-    background-color: red; 
+    background-color:burlywood; 
 }
 
 
@@ -81,7 +82,6 @@
     transform: scale(1.1); 
 }
 
-
 @keyframes ticking {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
@@ -90,3 +90,6 @@
 #second {
     animation: ticking 60s infinite linear; 
 }
+
+
+
